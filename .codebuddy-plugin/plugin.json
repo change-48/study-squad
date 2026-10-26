@@ -1,0 +1,96 @@
+{
+  "name": "study-squad",
+  "version": "1.0.0",
+  "description": "A four-role study team that archives courseware into Markdown, solves practice problems with citations, and runs spaced-repetition review.",
+  "author": {
+    "name": "change48",
+    "email": "change48@local"
+  },
+  "agents": [
+    "./agents/study-squad-team-lead.md",
+    "./agents/course-material-curator.md",
+    "./agents/practice-mentor.md",
+    "./agents/review-synthesizer.md"
+  ],
+  "skills": ["./skills/study-workspace"],
+
+  "expertType": "team",
+  "agentName": "study-squad-team-lead",
+  "teamInfo": {
+    "leadAgent": "study-squad-team-lead",
+    "memberAgents": [
+      "course-material-curator",
+      "practice-mentor",
+      "review-synthesizer"
+    ]
+  },
+
+  "displayName": {
+    "en": "Study Squad",
+    "zh": "学习陪跑团"
+  },
+  "profession": {
+    "en": "Study Squad",
+    "zh": "学习陪跑团"
+  },
+  "displayDescription": {
+    "en": "Turns your courseware and textbooks into a searchable Markdown library, answers practice problems with exact citations, logs mistakes, and schedules spaced review so a course actually sticks.",
+    "zh": "课件课本转Markdown归档，刷题解答标注出处，错题易错点自动沉淀，按遗忘曲线安排复习。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我们开始学这门课：先建好学习目录，把我给的课件和课本转成Markdown归档，再带我过一遍本章重点",
+    "en": "Let's start this course: set up the study folders, convert my courseware and textbook into organized Markdown, then walk me through this chapter's key points"
+  },
+  "plugin": "study-squad",
+  "tags": [
+    { "en": "Course Tutoring", "zh": "课程辅导" },
+    { "en": "Practice and Q&A", "zh": "刷题答疑" },
+    { "en": "Review and Retention", "zh": "复盘记忆" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Let's start this course: set up the study folders, convert my courseware and textbook into organized Markdown, then walk me through this chapter's key points",
+      "zh": "我们开始学这门课：先建好学习目录，把我给的课件和课本转成Markdown归档，再带我过一遍本章重点"
+    },
+    {
+      "en": "I'm doing practice problems: [paste problem]. Answer using the textbook's own framing, cite the source, and log it in my practice records",
+      "zh": "我在刷题：〔粘贴题目〕。有答案就按答案口径讲，没有就自己解，必须引用课件或课本出处，并记入刷题记录"
+    },
+    {
+      "en": "Review this week's study with me: update chapter summaries, problem-solving techniques, common mistakes, and my next review schedule",
+      "zh": "帮我复盘这段时间的学习：更新知识点总结、解题技巧和易错点，并告诉我今天该复习哪些错题"
+    }
+  ],
+  "members": [
+    {
+      "id": "study-squad-team-lead",
+      "displayName": { "en": "Wen", "zh": "温知新" },
+      "profession": { "en": "Head Learning Coach", "zh": "学习总教练" },
+      "avatar": "avatars/study-squad-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "course-material-curator",
+      "displayName": { "en": "Zhang", "zh": "章理清" },
+      "profession": { "en": "Course Material Architect", "zh": "课程资料架构师" },
+      "avatar": "avatars/course-material-curator.png",
+      "role": "member"
+    },
+    {
+      "id": "practice-mentor",
+      "displayName": { "en": "Xie", "zh": "解明远" },
+      "profession": { "en": "Problem-Solving Coach", "zh": "解题与答疑教练" },
+      "avatar": "avatars/practice-mentor.png",
+      "role": "member"
+    },
+    {
+      "id": "review-synthesizer",
+      "displayName": { "en": "Gu", "zh": "顾三省" },
+      "profession": { "en": "Review and Retention Planner", "zh": "复盘与记忆规划师" },
+      "avatar": "avatars/review-synthesizer.png",
+      "role": "member"
+    }
+  ]
+}
